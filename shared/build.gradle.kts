@@ -20,14 +20,14 @@ kotlin {
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material)
-                @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
-                implementation(compose.components.resources)
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
                 implementation(kotlin("test-annotations-common"))
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
             }
         }
         val androidMain by getting {
@@ -55,7 +55,7 @@ android {
 
     defaultConfig {
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

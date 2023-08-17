@@ -9,9 +9,11 @@ plugins {
 version = "1.0-SNAPSHOT"
 
 kotlin {
-    androidTarget()
+    android()
 
-    jvm("desktop")
+    jvm("desktop") {
+        jvmToolchain(11)
+    }
 
     sourceSets {
         val commonMain by getting {
@@ -48,10 +50,7 @@ kotlin {
 android {
     namespace = "${rootProject.group}.shared"
 
-    compileSdk = 33
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    sourceSets["main"].res.srcDirs("src/androidMain/res")
-    sourceSets["main"].resources.srcDirs("src/commonMain/resources")
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 26

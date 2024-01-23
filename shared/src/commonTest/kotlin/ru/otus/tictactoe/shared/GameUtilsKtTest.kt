@@ -1,11 +1,9 @@
 package ru.otus.tictactoe.shared
 
-import org.junit.Test
-import ru.otus.tictactoe.shared.computer
-import ru.otus.tictactoe.shared.isFull
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import kotlin.test.Test
 
 internal class GameUtilsKtTest {
     @Test

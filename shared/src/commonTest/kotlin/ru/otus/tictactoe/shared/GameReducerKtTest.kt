@@ -1,7 +1,8 @@
 package ru.otus.tictactoe.shared
 
-import org.junit.Test
 import kotlin.test.assertEquals
+import kotlin.test.Test
+
 
 internal class GameReducerKtTest {
     private val state = GameState()

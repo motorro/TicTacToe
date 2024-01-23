@@ -7,11 +7,11 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.runTest
-import org.junit.Test
 import ru.otus.tictactoe.shared.GameModel.Companion.COMPUTER_THINKS_MS
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
+import kotlin.test.Test
 
 @OptIn(ExperimentalCoroutinesApi::class)
 internal class GameModelTest {

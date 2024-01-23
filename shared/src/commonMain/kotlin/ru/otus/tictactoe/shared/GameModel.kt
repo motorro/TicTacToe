@@ -7,7 +7,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import org.jetbrains.annotations.VisibleForTesting
 
 /**
  * Runs game and saves state
@@ -58,7 +57,6 @@ class GameModel(private val scope: CoroutineScope) {
     }
 
     companion object {
-        @VisibleForTesting
         const val COMPUTER_THINKS_MS = 1000L
     }
 }
